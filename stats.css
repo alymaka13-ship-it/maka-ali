@@ -1,0 +1,107 @@
+/* ===== STATS SECTION ===== */
+/* قسم الإحصائيات مع أرقام متحركة */
+
+.stats {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--primary-dark) 100%);
+  padding: 4rem 0;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(232, 164, 74, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 90, 26, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ===== STATS GRID ===== */
+/* شبكة الإحصائيات */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== STAT ITEM ===== */
+/* عنصر الإحصائية الواحد */
+.stat-item {
+  text-align: center;
+  animation: scaleUp 0.8s ease both;
+}
+
+.stat-item:nth-child(2) { animation-delay: 0.1s; }
+.stat-item:nth-child(3) { animation-delay: 0.2s; }
+.stat-item:nth-child(4) { animation-delay: 0.3s; }
+
+/* ===== STAT NUMBER ===== */
+/* الرقم الكبير للإحصائية */
+.stat-number {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--primary-light);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== STAT LABEL ===== */
+/* وصف الإحصائية */
+.stat-label {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .stats {
+    padding: 3rem 0;
+  }
+
+  .stats-grid {
+    gap: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}

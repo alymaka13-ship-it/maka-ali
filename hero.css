@@ -1,0 +1,251 @@
+/* ===== HERO SECTION ===== */
+/* قسم الترحيب الرئيسي للموقع */
+
+.hero {
+  min-height: 92vh;
+  background:
+    linear-gradient(135deg, rgba(26, 15, 5, 0.78) 0%, rgba(61, 34, 16, 0.65) 45%, rgba(139, 90, 26, 0.75) 100%),
+    url("../image/hero/Gemini_Generated_Image_9rpvwm9rpvwm9rpv.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3.5rem 0 4rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 205, 121, 0.08), transparent 30%),
+              radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.08), transparent 28%),
+              linear-gradient(180deg, rgba(6, 4, 2, 0.22), rgba(10, 7, 4, 0.62));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===== BACKGROUND PATTERN ===== */
+/* أشكال هندسية وتدرجات لونية في الخلفية */
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 22% 82%, rgba(193, 122, 42, 0.22) 0%, transparent 55%),
+    radial-gradient(circle at 78% 18%, rgba(255, 255, 255, 0.08) 0%, transparent 45%);
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* ===== HERO CONTENT ===== */
+/* محتوى قسم الترحيب الرئيسي */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  animation: fadeUp 0.8s ease forwards;
+  position: relative;
+  padding: 2rem 2.5rem 2.5rem;
+  border-radius: 28px;
+  background: rgba(10, 7, 4, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+/* ===== HERO BADGE ===== */
+/* شارة صغيرة فوق العنوان الرئيسي */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 205, 121, 0.18);
+  border: 1px solid rgba(255, 205, 121, 0.35);
+  color: #fff8e5;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== HERO TITLE ===== */
+/* العنوان الرئيسي */
+.hero-title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+/* ===== HERO DESCRIPTION ===== */
+/* النص الوصفي تحت العنوان */
+.hero-desc {
+  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.85;
+  margin-bottom: 2rem;
+  max-width: 520px;
+}
+
+/* ===== HERO BUTTONS ===== */
+/* مجموعة الأزرار في قسم الترحيب */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  font-size: 1rem;
+  padding: 0.95rem 2rem;
+  border-radius: 999px;
+  min-width: 160px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-buttons .btn-primary {
+  color: #1c0f02;
+  background: #f6b459;
+  box-shadow: 0 16px 40px rgba(246, 180, 89, 0.28);
+}
+
+.hero-buttons .btn-secondary {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ===== HERO IMAGE / ILLUSTRATION ===== */
+/* الجزء الأيمن من الـ hero (الصورة أو الرسومات) */
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeUp 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-illustration {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(193, 122, 42, 0.2));
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .hero-image {
+    order: -1; /* ضع الصورة قبل النص على الأجهزة الصغيرة */
+  }
+
+  .hero-globe {
+    left: -150px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 85vh;
+    padding-top: 50px;
+  }
+
+  .hero-content {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    gap: 0.75rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-globe {
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    opacity: 0.08;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding-top: 60px;
+  }
+
+  .hero-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-height: 250px;
+  }
+
+  .hero-globe {
+    display: none;
+  }
+}

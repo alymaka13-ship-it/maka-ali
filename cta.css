@@ -1,0 +1,185 @@
+/* ===== CTA SECTION ===== */
+/* قسم استدعاء الإجراء وتحويله لقسم اتصال */
+
+.cta {
+  background: linear-gradient(135deg, rgba(232, 164, 74, 0.95) 0%, rgba(193, 122, 42, 0.95) 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 40%, rgba(255, 255, 255, 0.18) 0%, transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta .section-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.cta .section-title,
+.cta h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.cta .section-subtitle,
+.cta p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.contact-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form-card {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--dark);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+.contact-alert {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #f8f9fa;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.contact-alert.show {
+  display: block;
+}
+
+.contact-note {
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+.cta .btn-primary {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.cta .btn-primary:hover {
+  background-color: var(--cream);
+  color: var(--primary-dark);
+}
+
+.cta .btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 3rem 0;
+  }
+
+  .contact-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 2.5rem 0;
+  }
+
+  .contact-card .contact-card-actions {
+    flex-direction: column;
+  }
+}

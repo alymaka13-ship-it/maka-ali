@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة مكة علي لإلحاق العمالة بالخارج</title>
+  <meta name="description" content="شركة مكة علي لإلحاق العمالة بالخارج — متخصصون في توظيف المهنيين والعمالة الفنية المصرية في الدول العربية والأوروبية. ترخيص رقم 1405.">
+  <meta name="keywords" content="توظيف خارجي, إلحاق عمالة, وظائف الخارج, توظيف السعودية, توظيف الإمارات, وظائف مهندسين">
+  <meta property="og:title" content="شركة مكة علي لإلحاق العمالة بالخارج">
+  <meta property="og:description" content="نوفر فرص العمل في الدول العربية والأجنبية بخبرة تمتد لأكثر من 10 سنوات.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_EG">
+  <meta name="robots" content="index, follow">
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== STYLESHEETS ===== -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/stats.css">
+  <link rel="stylesheet" href="assets/css/jobs.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/cta.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader" class="loader">
+  <div class="loader-spinner"></div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/image/logo/logo.png" alt="شعار مكة علي" class="nav-logo-img">
+    <span class="nav-logo-text" data-i18n="navBrand">مكة علي</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about" id="navAboutLink" data-i18n="navAbout">عن الشركة</a></li>
+    <li><a href="#services" id="navServicesLink" data-i18n="navServices">الخدمات</a></li>
+    <li><a href="#jobs" id="navJobsLink" data-i18n="navJobs">الوظائف</a></li>
+    <li><a href="#contact" id="navContactLink" data-i18n="navContact">اتصل بنا</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <a href="https://wa.me/201001234567" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+      <span>💬</span> <span id="btnWhatsappText" data-i18n="btnWhatsapp">واتس آب</span>
+    </a>
+    <button class="btn-lang" id="langToggle">EN</button>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<!-- بداية قسم البطل (Hero) -->
+<section id="hero" class="hero">
+  <div class="hero-bg-pattern"></div>
+
+  <div class="hero-content">
+    <div class="hero-text reveal">
+      <div class="hero-badge">
+        <span>✨</span>
+        <span id="badgeText">توظيف احترافي</span>
+      </div>
+      <h1 class="hero-title" id="heroTitle">فرص عمل عالمية للمهنيين المصريين</h1>
+      <p class="hero-desc" id="heroDesc">شركتنا متخصصة في إيجاد أفضل فرص العمل في الدول العربية والأوروبية لأكثر من 10 سنوات.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="document.getElementById('applyModal').classList.add('show'); document.body.style.overflow = 'hidden';">
+          <span id="heroApplyBtn">قدم طلبك الآن</span>
+        </button>
+        <a href="https://wa.me/201001234567" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <span>💬</span> <span id="heroWhatsBtn">تواصل معنا</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- نهاية قسم البطل (Hero) -->
+
+<!-- ===== ABOUT SECTION ===== -->
+<!-- بداية قسم عن الشركة -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="aboutTag" data-i18n="aboutTag">عن الشركة</div>
+      <h2 class="section-title" id="aboutTitle" data-i18n="aboutTitle">شركة مكة علي لإلحاق العمالة بالخارج</h2>
+      <p class="section-subtitle" id="aboutSubtitle" data-i18n="aboutSubtitle">نحن شركة مصرية متخصصة في توفير فرص عمل خارجية ذات جودة عالية للمهنيين والعمالة الفنية، مع متابعة كاملة وسريعة للأوراق والتأشيرات.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3 id="aboutCard1Title" data-i18n="aboutCard1Title">خبرة موثوقة</h3>
+        <p id="aboutCard1Desc" data-i18n="aboutCard1Desc">أكثر من 10 سنوات من الخبرة في توظيف العمالة المصرية في دول الخليج وأوروبا، مع فرق متابعة محترفة ومتخصصة.</p>
+      </div>
+      <div class="about-card">
+        <h3 id="aboutCard2Title" data-i18n="aboutCard2Title">خدمة متميزة</h3>
+        <p id="aboutCard2Desc" data-i18n="aboutCard2Desc">ندعمك في كل خطوة بدءاً من اختيار الوظيفة مروراً بتجهيز الأوراق وحتى وصولك لبيئة العمل.</p>
+      </div>
+      <div class="about-card">
+        <h3 id="aboutCard3Title" data-i18n="aboutCard3Title">ترخيص رسمي</h3>
+        <p id="aboutCard3Desc" data-i18n="aboutCard3Desc">نعمل برخصة رقم 1405، ونضمن لك التعامل مع شركة مهنية تحترم حقوقك وتؤمن بالشفافية الكاملة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم عن الشركة -->
+
+<!-- ===== SERVICES SECTION ===== -->
+<!-- بداية قسم الخدمات -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="svcTag">الخدمات</div>
+      <h2 class="section-title" id="svcTitle">ما الذي <span>نقدمه</span></h2>
+      <p class="section-subtitle" id="svcSubtitle">حلول شاملة وموثوقة لتوظيفك في أفضل الشركات العالمية</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3 id="svc1Title">البحث والاختيار</h3>
+        <p id="svc1Desc">نبحث عن أفضل الفرص التي تناسب مؤهلاتك وخبرتك</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📄</div>
+        <h3 id="svc2Title">تجهيز الأوراق</h3>
+        <p id="svc2Desc">نساعدك في تجهيز جميع المستندات المطلوبة</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛂</div>
+        <h3 id="svc3Title">التأشيرات والتصاريح</h3>
+        <p id="svc3Desc">نتولى جميع إجراءات التأشيرات والتصاريح اللازمة</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3 id="svc4Title">المتابعة والدعم</h3>
+        <p id="svc4Desc">نبقى معك طوال فترة التوظيف والعمل بالخارج</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💼</div>
+        <h3 id="svc5Title">التدريب والتطوير</h3>
+        <p id="svc5Desc">نوفر برامج تدريب لتطوير مهاراتك المهنية</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌍</div>
+        <h3 id="svc6Title">الشراكات الدولية</h3>
+        <p id="svc6Desc">نتعاون مع شركات عالمية رائدة في دول متعددة</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم الخدمات -->
+
+<!-- ===== STATS SECTION ===== -->
+<!-- بداية قسم الإحصائيات -->
+<section id="stats" class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="500">+500</div>
+        <div class="stat-label" id="statLabel1">عامل موظف</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="15">+15</div>
+        <div class="stat-label" id="statLabel2">دولة شريكة</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="10">+10</div>
+        <div class="stat-label" id="statLabel3">سنوات خبرة</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="98">98%</div>
+        <div class="stat-label" id="statLabel4">معدل الرضا</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم الإحصائيات -->
+
+<!-- ===== JOBS SECTION ===== -->
+<!-- بداية قسم الوظائف -->
+<section id="jobs" class="jobs">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="jobsTag" data-i18n="jobsTag">الوظائف المتخصصة</div>
+      <h2 class="section-title" id="jobsTitle">فرص <span id="jobsTitleSpan">وظيفية</span> مهنية</h2>
+      <p class="section-subtitle" id="jobsSubtitle">نقدم هيكل وظائف مصمم لكل تخصص رئيسي في شركتنا، مع عرض بسيط واحترافي يضمن تجربة راقية للمحترفين.</p>
+    </div>
+
+    <div class="jobs-controls">
+      <div class="job-filters">
+        <button class="filter-btn active" data-filter="all" id="filterAllBtn" data-i18n="filterAll">الكل</button>
+        <button class="filter-btn" data-filter="MEP" id="filterMEPBtn" data-i18n="filterMEP">MEP</button>
+        <button class="filter-btn" data-filter="FIT-OUT" id="filterFITOUTBtn" data-i18n="filterFITOut">FIT-OUT</button>
+        <button class="filter-btn" data-filter="medical" id="filterMedicalBtn" data-i18n="filterMedical">طبي</button>
+      </div>
+    </div>
+
+    <div class="category-grid reveal">
+      <article class="category-card" data-category="MEP">
+        <div class="category-icon">🔧</div>
+        <h3 id="categoryTitleMEP" data-i18n="categoryTitleMEP">MEP</h3>
+        <p id="categoryDescMEP" data-i18n="categoryDescMEP">أعمال الكهرباء، التكييف، التمديدات الصحية، وتركيب أنظمة المباني الذكية للمشاريع الكبيرة.</p>
+        <button class="btn btn-secondary" onclick="showCategory('MEP')" data-i18n="showJobs">عرض الوظائف</button>
+      </article>
+
+      <article class="category-card" data-category="FIT-OUT">
+        <div class="category-icon">🏗️</div>
+        <h3 id="categoryTitleFITOUT" data-i18n="categoryTitleFITOut">FIT-OUT</h3>
+        <p id="categoryDescFITOUT" data-i18n="categoryDescFITOut">تشطيبات داخلية فاخرة، تنفيذ الديكورات، الأثاث المدمج، وتصميم المساحات التجارية والإدارية.</p>
+        <button class="btn btn-secondary" onclick="showCategory('FIT-OUT')" data-i18n="showJobs">عرض الوظائف</button>
+      </article>
+
+      <article class="category-card" data-category="medical">
+        <div class="category-icon">🩺</div>
+        <h3 id="categoryTitleMedical" data-i18n="categoryTitleMedical">القطاع الطبي</h3>
+        <p id="categoryDescMedical" data-i18n="categoryDescMedical">أطباء، ممرضين، فنيي طوارئ، والعاملين في المستشفيات والمراكز الصحية ذات المعايير الدولية.</p>
+        <button class="btn btn-secondary" onclick="showCategory('medical')" data-i18n="showJobs">عرض الوظائف</button>
+      </article>
+    </div>
+
+    <div class="jobs-grid" id="jobCards">
+      <article class="job-card" data-category="MEP">
+        <div class="job-header">
+          <h3 data-job="electrician" data-i18n="jobElectrician">فني كهرباء</h3>
+          <span class="job-category" data-i18n="jobCategoryMEP">MEP</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="MEP">
+        <div class="job-header">
+          <h3 data-job="hvacEngineer" data-i18n="jobHVAC">مهندس تكييف وتبريد</h3>
+          <span class="job-category" data-i18n="jobCategoryMEP">MEP</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="interiorSupervisor" data-i18n="jobInteriorSupervisor">مشرف تنفيذ داخلي</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="finishesTechnician" data-i18n="jobFinishesTechnician">فني تشطيبات داخلية</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="carpenter" data-i18n="jobCarpenter">نجار</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="blacksmith" data-i18n="jobBlacksmith">حداد</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="gypsumTechnician" data-i18n="jobGypsumTechnician">فني جبس بورد</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="FIT-OUT">
+        <div class="job-header">
+          <h3 data-job="painter" data-i18n="jobPainter">دهانات</h3>
+          <span class="job-category" data-i18n="jobCategoryFITOut">FIT-OUT</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="medical">
+        <div class="job-header">
+          <h3 data-job="nurse" data-i18n="jobNurse">ممرضة</h3>
+          <span class="job-category" data-i18n="jobCategoryMedical">طبي</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="medical">
+        <div class="job-header">
+          <h3 data-job="labTechnician" data-i18n="jobLabTechnician">فني مختبر طبي</h3>
+          <span class="job-category" data-i18n="jobCategoryMedical">طبي</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+
+      <article class="job-card" data-category="medical">
+        <div class="job-header">
+          <h3 data-job="radiologyTechnician" data-i18n="jobRadiologyTechnician">فني أشعة</h3>
+          <span class="job-category" data-i18n="jobCategoryMedical">طبي</span>
+        </div>
+        <button class="btn btn-apply" onclick="openApplyModal(this)">قدم الآن</button>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم الوظائف -->
+
+<!-- ===== PORTFOLIO SECTION ===== -->
+<!-- بداية قسم البورتفوليو -->
+<section id="portfolio" class="portfolio reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="portfolioTag" data-i18n="portfolioTag">بورتفوليو</div>
+      <h2 class="section-title" id="portfolioTitle" data-i18n="portfolioTitle">بورتفوليو</h2>
+    </div>
+
+    <div class="portfolio-slider">
+      <div class="slider-track">
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide1.png" alt="عمل بورتفوليو 1">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide2.png" alt="عمل بورتفوليو 2">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide3.png" alt="عمل بورتفوليو 3">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide4.png" alt="عمل بورتفوليو 4">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide5.png" alt="عمل بورتفوليو 5">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide6.png" alt="عمل بورتفوليو 6">
+        </div>
+        <div class="portfolio-card">
+          <img src="assets/image/portfolio/slide7.png" alt="عمل بورتفوليو 7">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم البورتفوليو -->
+
+<!-- ===== PARTNERS SECTION ===== -->
+<!-- بداية قسم شركاؤنا -->
+<section id="partners" class="partners reveal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="partnersTag">شركاؤنا</div>
+      <h2 class="section-title" id="partnersTitle">شركاؤنا</h2>
+      <p class="section-subtitle">نفخر بالتعاون مع شركاء موثوقين في مجالات متنوعة</p>
+    </div>
+
+    <div class="partners-grid reveal">
+      <div class="partners-feature">
+        <img src="assets/image/Business Partners/Power.png" alt="Power" />
+      </div>
+
+      <div class="partners-logos">
+        <div class="partner-logo"><img src="assets/image/Business Partners/Baladna.png" alt="Baladna"></div>
+        <div class="partner-logo"><img src="assets/image/Business Partners/Estithmar.png" alt="Estithmar"></div>
+        <div class="partner-logo"><img src="assets/image/Business Partners/UCC.jpg" alt="UCC"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم شركاؤنا -->
+
+<!-- ===== GALLERY SECTION ===== -->
+<!-- بداية قسم المعرض -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="galTag">معرض صورنا</div>
+      <h2 class="section-title" id="galTitle">صور من <span id="galTitleSpan">فعالياتنا</span></h2>
+      <p class="section-subtitle" id="galSubtitle">تعرف على أنشطتنا وفعالياتنا المختلفة</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.22%20AM%20(1).jpeg" alt="معرض أعمال 1">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.22%20AM.jpeg" alt="معرض أعمال 2">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.23%20AM%20(1).jpeg" alt="معرض أعمال 3">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.23%20AM%20(2).jpeg" alt="معرض أعمال 4">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.23%20AM%20(3).jpeg" alt="معرض أعمال 5">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.23%20AM%20(4).jpeg" alt="معرض أعمال 6">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.23%20AM.jpeg" alt="معرض أعمال 7">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/image/ourWork/WhatsApp%20Image%202026-05-18%20at%2012.59.24%20AM.jpeg" alt="معرض أعمال 8">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم المعرض -->
+
+<!-- ===== CTA SECTION ===== -->
+<!-- بداية قسم استدعاء الإجراء -->
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" id="contactTag" data-i18n="contactTag">اتصل بنا</div>
+      <h2 class="section-title" id="contactTitle" data-i18n="contactTitle">تواصل معنا الآن</h2>
+      <p class="section-subtitle" id="contactSubtitle" data-i18n="contactSubtitle">أرسل لنا رسالة وسنرد عليك خلال يومي عمل. نحن هنا لدعمك في رحلة التوظيف.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card contact-info-card">
+        <h3 id="contactInfoTitle" data-i18n="contactInfoTitle">معلومات التواصل</h3>
+        <p id="contactInfoDesc" data-i18n="contactInfoDesc">يمكنك الاتصال بنا أو إرسال رسالة وسنكون سعداء بالرد عليك.</p>
+        <ul class="contact-info-list">
+          <li><span>📍</span> <span id="contactAddress" data-i18n="contactAddress">المريوطية، اللبيني، فيصل، مصر</span></li>
+          <li><span>📱</span> +201036202191</li>
+          <li><span>📱</span> +201022701110</li>
+          <li><span>📧</span> alymaka12@gmail.com</li>
+          <li><span>🕒</span> <span id="contactHours" data-i18n="contactHours">السبت - الخميس: 9 ص - 5 م</span></li>
+        </ul>
+        <div class="contact-card-actions">
+          <a href="https://wa.me/201036202191" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="contactBtnWhatsapp">تواصل عبر واتس</a>
+          <a href="mailto:alymaka12@gmail.com" class="btn btn-secondary" data-i18n="contactBtnEmail">أرسل بريدًا</a>
+        </div>
+      </div>
+
+      <div class="contact-card contact-form-card">
+        <h3 id="contactFormTitle" data-i18n="contactFormTitle">أرسل رسالة</h3>
+        <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+          <div class="form-group">
+            <label for="contactName" id="contactLabelName" data-i18n="contactLabelName">الاسم الكامل *</label>
+            <input type="text" id="contactName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactPhone" id="contactLabelPhone" data-i18n="contactLabelPhone">رقم الهاتف *</label>
+            <input type="tel" id="contactPhone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail" id="contactLabelEmail" data-i18n="contactLabelEmail">البريد الإلكتروني</label>
+            <input type="email" id="contactEmail">
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage" id="contactLabelMessage" data-i18n="contactLabelMessage">الرسالة *</label>
+            <textarea id="contactMessage" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="contactSubmitBtn">إرسال الرسالة</button>
+          <div id="contactAlert" class="contact-alert"></div>
+        </form>
+        <p class="contact-note" id="contactNote" data-i18n="contactNote">سنرسل لك ردًا سريعًا، أو نوفر لك رابطًا مباشرًا للمحادثة عبر واتساب.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- نهاية قسم استدعاء الإجراء -->
+
+<!-- ===== FOOTER ===== -->
+<!-- بداية التذييل -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Footer Brand -->
+      <div class="footer-col footer-brand">
+        <h3 data-i18n="footerBrandTitle">مكة علي</h3>
+        <p id="footerDesc" data-i18n="footerDesc">شركة موثوقة متخصصة في إلحاق العمالة المصرية بفرص عمل عالمية.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook" aria-label="Facebook">f</a>
+          <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
+          <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-col">
+        <h4 id="footerLinks" data-i18n="footerLinks">روابط سريعة</h4>
+        <ul>
+          <li><a href="#about" data-i18n="navAbout">عن الشركة</a></li>
+          <li><a href="#services" data-i18n="navServices">الخدمات</a></li>
+          <li><a href="#jobs" data-i18n="navJobs">الوظائف</a></li>
+          <li><a href="#contact" data-i18n="navContact">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Partners -->
+      <div class="footer-col">
+        <h4 id="footerPartners" data-i18n="footerPartners">شركاؤنا</h4>
+        <ul>
+          <li><a href="#" data-i18n="footerLinkPartnerCompanies">الشركات الشريكة</a></li>
+          <li><a href="#" data-i18n="footerLinkPrivacy">سياسة الخصوصية</a></li>
+          <li><a href="#" data-i18n="footerLinkTerms">شروط الاستخدام</a></li>
+          <li><a href="#" data-i18n="footerLinkFAQ">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Contact -->
+      <div class="footer-col">
+        <h4 id="footerContact" data-i18n="footerContact">تواصل معنا</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span id="footerAddress" data-i18n="footerAddress">المريوطية، اللبيني، فيصل، مصر</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📱</span>
+          <span>+201036202191</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📱</span>
+          <span>+201022701110</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📧</span>
+          <span>alymaka12@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">🕐</span>
+          <span id="footerHours" aria-label="أوقات العمل">السبت - الخميس: 9 ص - 5 م</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p id="footerRights">&copy; 2024 شركة مكة علي. جميع الحقوق محفوظة.</p>
+      <span class="footer-license" id="footerLicense">ترخيص رقم: 1405</span>
+    </div>
+  </div>
+</footer>
+<!-- نهاية التذييل -->
+
+<!-- ===== APPLY MODAL ===== -->
+<!-- بداية نافذة تقديم الطلب -->
+<div id="applyModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modalTitle">قدم طلبك الآن</h2>
+      <button class="modal-close" onclick="closeModal()" aria-label="إغلاق النافذة">×</button>
+    </div>
+
+    <form class="application-form" onsubmit="event.preventDefault(); submitApplication();">
+      <div class="form-group">
+        <label for="fieldName" id="labelName" data-i18n="labelName">الاسم الكامل *</label>
+        <input type="text" id="fieldName" required>
+        <div class="field-error" id="errName"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="fieldPhone" id="labelPhone" data-i18n="labelPhone">رقم الهاتف *</label>
+        <input type="tel" id="fieldPhone" required>
+        <div class="field-error" id="errPhone"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="fieldEmail" id="labelEmail" data-i18n="labelEmail">البريد الإلكتروني</label>
+        <input type="email" id="fieldEmail">
+        <div class="field-error" id="errEmail"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="fieldJob" id="labelJob" data-i18n="labelJob">الوظيفة المطلوبة *</label>
+        <input type="text" id="fieldJob" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="fieldExp" id="labelExp" data-i18n="labelExp">سنوات الخبرة *</label>
+        <select id="fieldExp" required>
+          <option id="expOpt0" value="">اختر...</option>
+          <option id="expOpt1" value="less-1">أقل من سنة</option>
+          <option id="expOpt2" value="1-3">1 - 3 سنوات</option>
+          <option id="expOpt3" value="3-5">3 - 5 سنوات</option>
+          <option id="expOpt4" value="more-5">أكثر من 5 سنوات</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fieldNote" id="labelNote">ملاحظات إضافية</label>
+        <textarea id="fieldNote" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitBtn">إرسال الطلب</button>
+    </form>
+  </div>
+</div>
+<!-- نهاية نافذة تقديم الطلب -->
+
+<!-- ===== SUCCESS POPUP ===== -->
+<!-- بداية نافذة النجاح -->
+<div id="successPopup" class="popup">
+  <div class="popup-content">
+    <div class="popup-icon">✅</div>
+    <h2 id="popupTitle">شكراً لك!</h2>
+    <p id="popupMsg">تم استقبال طلبك بنجاح. سنتواصل معك قريباً.</p>
+    <button class="btn btn-primary popup-close" onclick="closePopup()" id="popupBtn">حسناً</button>
+  </div>
+</div>
+<!-- نهاية نافذة النجاح -->
+
+<!-- ===== SCROLL TO TOP ===== -->
+<!-- زر العودة للأعلى -->
+<button id="scrollTop" class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="العودة للأعلى">↑</button>
+
+<!-- ===== SCRIPTS ===== -->
+<!-- ملفات JavaScript الرئيسية -->
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/hero.js"></script>
+<script src="assets/js/reveal.js"></script>
+<script src="assets/js/stats.js"></script>
+<script src="assets/js/jobs.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/portfolio.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+
+
+

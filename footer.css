@@ -1,0 +1,253 @@
+/* ===== FOOTER ===== */
+/* التذييل (Footer) */
+
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  margin-top: 5rem;
+  border-top: 3px solid var(--primary);
+}
+
+/* ===== FOOTER CONTENT ===== */
+/* محتوى التذييل الرئيسي */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== FOOTER COLUMN ===== */
+/* أعمدة التذييل */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: var(--white);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  color: var(--primary-light);
+}
+
+/* ===== FOOTER BRAND ===== */
+/* قسم الشركة في التذييل */
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== FOOTER SOCIAL ===== */
+/* أيقونات التواصل الاجتماعي */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--white);
+  transition: var(--transition-fast);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer-social a:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER LINKS ===== */
+/* قائمة الروابط في التذييل */
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.footer-col ul li a:hover {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+/* ===== FOOTER CONTACT ===== */
+/* معلومات التواصل */
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+.footer-contact-item .icon {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+}
+
+.footer-contact-item span:last-child {
+  line-height: 1.6;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+/* الجزء السفلي من التذييل */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-license {
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+/* زر العودة للأعلى */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px var(--shadow-warm);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .footer-content {
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scroll-top {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-col h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #0f0a05;
+    color: var(--white);
+    border-top-color: rgba(193, 122, 42, 0.5);
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+    color: var(--white);
+  }
+
+  .footer-brand p,
+  .footer-col ul li a,
+  .footer-contact-item,
+  .footer-bottom p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .footer-bottom {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .footer-col ul li a:hover {
+    color: var(--primary-light);
+  }
+}
